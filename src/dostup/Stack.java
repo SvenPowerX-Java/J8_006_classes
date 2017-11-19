@@ -19,12 +19,12 @@ public class Stack {
 	}
 	
 	//разместить элемент в стеке
-	void push(int item) {
+	 public void push(int item) {
 		if (tos == stck.length-1) System.out.println("Стек заполнен");
 		else stck[++tos] = item;
 	}
 	//Извлечь елемент из стека
-	int pop(){
+	public int pop(){
 		if (tos < 0) {
 			System.out.println("Стек не загружен.");
 			return 0;
