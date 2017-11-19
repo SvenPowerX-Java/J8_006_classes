@@ -13,7 +13,7 @@ public class Stack {
 	private int tos;
 	
 	//Выделить память под стек и инициализировать вершину стека
-	Stack(int size) {
+	public Stack(int size) {
 		stck = new int[size];
 		tos = -1;
 	}
