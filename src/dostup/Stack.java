@@ -9,17 +9,18 @@ public class Stack {
 		Это означает, что они не могут быть случайно или
 		намеренно изменены таким образом, чтобы нарушить стек.
 	*/
-	private int stck[] = new int[100];
+	private int stck[];
 	private int tos;
 	
-	//инициализировать вершину стека
-	Stack() {
+	//Выделить память под стек и инициализировать вершину стека
+	Stack(int size) {
+		stck = new int[size];
 		tos = -1;
 	}
 	
 	//разместить элемент в стеке
 	void push(int item) {
-		if (tos == 9) System.out.println("Стек заполнен");
+		if (tos == stck.length-1) System.out.println("Стек заполнен");
 		else stck[++tos] = item;
 	}
 	//Извлечь елемент из стека
