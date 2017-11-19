@@ -5,21 +5,26 @@ public class Box {
 	double height;
 	double depth;
 	
-	double volume() {
+	public double volume() {
 		return with * height * depth;
 	}
 	
 	public Box() {
 		System.out.println("Конструирование объекта Box");
-		this.with = 10;
-		this.height = 10;
-		this.depth = 10;
+		this.with = -1;
+		this.height = -1;
+		this.depth = -1;
 	}
 	
 	public Box(double with, double height, double depth) {
 		this.with = with;
 		this.height = height;
 		this.depth = depth;
+	}
+	
+	//Конструктор для куба
+	public Box(double len) {
+		with = height = depth = len;
 	}
 	
 	void setDim(double with, double height, double depth) {
