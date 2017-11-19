@@ -8,11 +8,11 @@ public class BoxDemo {
 	public static void main(String[] args) {
 		Box myBox = new Box();
 		double vol;
-		myBox.with = 10;
+		myBox.width = 10;
 		myBox.height = 20;
 		myBox.depth = 15;
 		
-		vol = myBox.with * myBox.height * myBox.depth;
+		vol = myBox.width * myBox.height * myBox.depth;
 		System.out.println(" Обьём равен " + vol);
 		
 		

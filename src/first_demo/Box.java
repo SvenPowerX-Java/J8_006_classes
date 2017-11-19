@@ -1,34 +1,40 @@
 package first_demo;
 
 public class Box {
-	double with;
+	double width;
 	double height;
 	double depth;
 	
 	public double volume() {
-		return with * height * depth;
+		return width * height * depth;
 	}
 	
 	public Box() {
 		System.out.println("Конструирование объекта Box");
-		this.with = -1;
+		this.width = -1;
 		this.height = -1;
 		this.depth = -1;
 	}
 	
-	public Box(double with, double height, double depth) {
-		this.with = with;
+	public Box(Box ob) {
+		width = ob.width;
+		height = ob.height;
+		depth = ob.depth;
+	}
+	
+	public Box(double width, double height, double depth) {
+		this.width = width;
 		this.height = height;
 		this.depth = depth;
 	}
 	
 	//Конструктор для куба
 	public Box(double len) {
-		with = height = depth = len;
+		width = height = depth = len;
 	}
 	
 	void setDim(double with, double height, double depth) {
-		this.with = with;
+		this.width = with;
 		this.height = height;
 		this.depth = depth;
 	}

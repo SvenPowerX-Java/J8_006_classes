@@ -6,18 +6,18 @@ public class BoxDemo2 {
 		Box mybox2 = new Box();
 		double vol;
 		
-		mybox1.with = 10;
+		mybox1.width = 10;
 		mybox1.height = 20;
 		mybox1.depth = 15;
 		
-		mybox2.with = 3;
+		mybox2.width = 3;
 		mybox2.height = 6;
 		mybox2.depth = 9;
 		
-		vol = mybox1.with * mybox1.height * mybox1.depth;
+		vol = mybox1.width * mybox1.height * mybox1.depth;
 		System.out.println("Обьём первого vol = " + vol);
 		
-		vol = mybox2.with * mybox2.height * mybox2.depth;
+		vol = mybox2.width * mybox2.height * mybox2.depth;
 		System.out.println("Обьём второго vol = " + vol);
 	}
 }
