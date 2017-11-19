@@ -16,6 +16,12 @@ public class Box {
 		this.depth = 10;
 	}
 	
+	public Box(double with, double height, double depth) {
+		this.with = with;
+		this.height = height;
+		this.depth = depth;
+	}
+	
 	void setDim(double with, double height, double depth) {
 		this.with = with;
 		this.height = height;
