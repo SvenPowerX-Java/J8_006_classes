@@ -22,4 +22,7 @@ public class A {
 		System.out.println("j = " + j);
 	}
 	
+	public A() {
+		System.out.println("В конструкторе A.");
+	}
 }
