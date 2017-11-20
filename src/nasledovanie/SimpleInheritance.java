@@ -7,7 +7,7 @@ public class SimpleInheritance {
 		
 		//суперклас может использоватся самостоятельно
 		superOb.i = 10;
-		superOb.j = 20;
+//		superOb.j = 20;
 		System.out.println("Содержимое объекта superOb:");
 		superOb.showij();
 		System.out.println();
@@ -16,7 +16,7 @@ public class SimpleInheritance {
 		Подкласс имеет доступ ко всем открытым членм своего суперкласса.
 		 */
 		supOb.i = 7;
-		supOb.j = 8;
+//		supOb.j = 8;
 		supOb.k = 9;
 		System.out.println("Содержимое объекта subOb: ");
 		supOb.showij();
