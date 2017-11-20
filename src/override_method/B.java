@@ -9,6 +9,11 @@ public class B extends A {
 		super(i, j);
 		this.k = k;
 	}
+	
+	public B() {
+	
+	}
+	
 	void show() {
 		super.show();
 		System.out.println("k = " + k);
@@ -21,7 +26,6 @@ public class B extends A {
 	}
 	
 	//переопределить метод callMe()
-	@Override
 	void callMe() {
 		System.out.println("В методе callMe() из класса B");
 	}

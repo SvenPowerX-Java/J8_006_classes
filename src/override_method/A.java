@@ -7,6 +7,11 @@ public class A {
 		this.i = i;
 		this.j = j;
 	}
+	
+	public A() {
+	
+	}
+	
 	void show() {
 		System.out.println("i and j: " + i+" "+j);
 	}
