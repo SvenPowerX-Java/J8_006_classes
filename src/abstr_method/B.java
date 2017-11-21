@@ -8,4 +8,7 @@ public class B extends A
 	}
 	
 	
+	/*protected void meth(){
+		System.out.println("Недопустимо");
+	}*/
 }

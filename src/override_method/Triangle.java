@@ -10,7 +10,7 @@ public class Triangle extends Figure {
 	//Переопределить метод area()
 	
 	@Override
-	double area() {
+	public double area() {
 		System.out.println("Площадь в области треугольника.");
 		return dim1 * dim2 / 2;
 	}

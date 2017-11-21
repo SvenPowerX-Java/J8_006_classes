@@ -8,7 +8,7 @@ public class Rectangle extends Figure {
 		super(dim1, dim2);
 	}
 	
-	double area() {
+	public double area() {
 		System.out.println("В области четырехугольника");
 		return dim1 * dim2;
 	}
